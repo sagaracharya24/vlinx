@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1067690914823",
+    "project_id": "vlinx-d9f2b",
+    "storage_bucket": "vlinx-d9f2b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1067690914823:android:b214ccfd786b8043f626a2",
+        "android_client_info": {
+          "package_name": "com.example.vlinx"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1067690914823-9843s3n3d09rob60gju5ccsk3o5ort29.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDHnTlqN9M7jrEZkm9gorncTc7r_QtVlxo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1067690914823-9843s3n3d09rob60gju5ccsk3o5ort29.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
