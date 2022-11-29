@@ -1,9 +1,8 @@
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
+import 'package:vlinx/features/landing/screens/landing_screen.dart';
 import 'package:vlinx/firebase_options.dart';
-import 'package:vlinx/responsive/responsive_layout.dart';
-import 'package:vlinx/screens/mobile_screen_layout.dart';
-import 'package:vlinx/screens/web_screen_layout.dart';
+import 'package:vlinx/router.dart';
 import 'package:vlinx/utils/colors.dart';
 
 void main() async {
@@ -20,12 +19,15 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'Vlinx',
-      theme:
-          ThemeData.dark().copyWith(scaffoldBackgroundColor: backgroundColor),
-      home: const ResponsiveLayout(
-        mobileScreenLayout: MobileScreenLayout(),
-        webScreenLayout: WebScreenLayout(),
-      ),
+      theme: ThemeData.dark().copyWith(
+          scaffoldBackgroundColor: backgroundColor,
+          appBarTheme: const AppBarTheme(color: appBarColor)),
+      onGenerateRoute: (settings) => generateRoute(settings),
+      // home: const ResponsiveLayout(
+      //   mobileScreenLayout: MobileScreenLayout(),
+      //   webScreenLayout: WebScreenLayout(),
+      // ),
+      home: const LandingScreen(),
     );
   }
 }
